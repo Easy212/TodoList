@@ -22,7 +22,7 @@ function TodoInsert({onInsertToggle, onInsertTodo, selTodo, onRemove, onUpdate})
         }
     }, [selTodo]);
     return(
-        <div>
+        <div className='todoInsWrap'>
             <div className='backGround' onClick={onInsertToggle}></div>
             <form onSubmit= {selTodo ? () => {onUpdate(selTodo.id, value)} : onSubmit} className='insertForm'>
                 <input 
